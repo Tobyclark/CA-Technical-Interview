@@ -1,0 +1,215 @@
+{
+  "2019": {
+    "Sandpoint Branch": {
+      "branchName": "Sandpoint Branch",
+      "specialty": "Sales",
+      "employees": [
+        {
+          "name": "Joward Maximilian",
+          "status": "Tenured",
+          "department": "Sales",
+          "productivity": 75
+        },
+        {
+          "name": "Big Tom",
+          "department": "Sales",
+          "productivity": 98
+        },
+        {
+          "name": "7 Toe Bill",
+          "productivity": 3
+        },
+        {
+          "name": "Pamila Richardson",
+          "status": "New",
+          "department": "HR"
+        }
+      ]
+    },
+    "Newport Branch": {
+      "branchName": "Newport Branch",
+      "specialty": "IT",
+      "employees": [
+        {
+          "name": "Xavier Xylophone",
+          "department": "IT",
+          "productivity": 74
+        },
+        {
+          "name": "Barry Bankmoore",
+          "department": "IT",
+          "status": "Tenured",
+          "productivity": 33
+        },
+        {
+          "name": "John 'Cold Iron' McDawson",
+          "department": "HR",
+          "status": "Tenured",
+          "productivity": 100
+        }
+      ]
+    }
+  },
+  "2020": {
+    "Sandpoint Branch": {
+      "branchName": "Sandpoint Branch",
+      "specialty": "Sales",
+      "employees": [
+        {
+          "name": "Joward Maximilian",
+          "status": "Tenured",
+          "department": "Sales",
+          "productivity": 83
+        },
+        {
+          "name": "Big Tom",
+          "department": "Sales",
+          "productivity": 94
+        },
+        {
+          "name": "7 Toe Bill",
+          "productivity": 7
+        },
+        {
+          "name": "Pamila Richardson",
+          "department": "HR",
+          "productivity": 89
+        }
+      ]
+    },
+    "Newport Branch": {
+      "branchName": "Newport Branch",
+      "specialty": "IT",
+      "employees": [
+        {
+          "name": "Xavier Xylophone",
+          "department": "IT",
+          "status": "Tenured",
+          "productivity": 37
+        },
+        {
+          "name": "Barry Bankmoore",
+          "department": "IT",
+          "status": "Tenured",
+          "productivity": 38
+        },
+        {
+          "name": "John 'Cold Iron' McDawson",
+          "department": "HR",
+          "status": "Tenured",
+          "productivity": 100
+        }
+      ]
+    }
+  },
+  "2021": {
+    "Sandpoint Branch": {
+      "branchName": "Sandpoint Branch",
+      "specialty": "Sales",
+      "employees": [
+        {
+          "name": "Joward Maximilian",
+          "status": "Tenured",
+          "department": "Sales",
+          "productivity": 78
+        },
+        {
+          "name": "Big Tom",
+          "status": "Tenured",
+          "department": "Sales",
+          "productivity": 67
+        },
+        {
+          "name": "7 Toe Bill",
+          "productivity": 2
+        },
+        {
+          "name": "Barry Bankmoore",
+          "department": "IT",
+          "status": "Tenured",
+          "productivity": 56
+        },
+        {
+          "name": "Pamila Richardson",
+          "status": "Tenured",
+          "department": "HR",
+          "productivity": 92
+        }
+      ]
+    },
+    "Newport Branch": {
+      "branchName": "Newport Branch",
+      "specialty": "IT",
+      "employees": [
+        {
+          "name": "Jane Doe",
+          "department": "IT",
+          "status": "New"
+        },
+        {
+          "name": "Jannet Eddleson",
+          "department": "IT",
+          "status": "New"
+        },
+        {
+          "name": "John 'Cold Iron' McDawson",
+          "department": "HR",
+          "status": "Tenured",
+          "productivity": 100
+        }
+      ]
+    }
+  },
+  "2022": {
+    "Sandpoint Branch": {
+      "branchName": "Sandpoint Branch",
+      "specialty": "Sales",
+      "employees": [
+        {
+          "name": "Joward Maximilian",
+          "status": "Tenured",
+          "department": "Sales",
+          "productivity": 82
+        },
+        {
+          "name": "Big Tom",
+          "status": "Tenured",
+          "department": "Sales",
+          "productivity": 67
+        },
+        {
+          "name": "7 Toe Bill",
+          "productivity": -1
+        },
+        {
+          "name": "Pamila Richardson",
+          "status": "Tenured",
+          "department": "HR",
+          "productivity": 93
+        }
+      ]
+    },
+    "Newport Branch": {
+      "branchName": "Newport Branch",
+      "specialty": "IT",
+      "employees": [
+        {
+          "name": "Jane Doe",
+          "department": "IT",
+          "productivity": 86
+        },
+        {
+          "name": "Jannet Eddleson",
+          "department": "IT",
+          "productivity": 91
+        },
+        {
+          "name": "John 'Cold Iron' McDawson",
+          "department": "HR",
+          "status": "Tenured",
+          "productivity": 100
+        }
+      ]
+    }
+  }
+}

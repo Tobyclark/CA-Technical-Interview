@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="math.ConcurrentTest" time="0.15" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\toby\OneDrive\Desktop\Jobs\CA-Technical-Interview\DebuggingHomework\DebuggingHomework\target\test-classes;C:\Users\toby\OneDrive\Desktop\Jobs\CA-Technical-Interview\DebuggingHomework\DebuggingHomework\target\classes;C:\Users\toby\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\toby\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.14+7\bin"/>
+    <property name="sun.java.command" value="C:\Users\toby\AppData\Local\Temp\surefire797646745362383724\surefirebooter-20250714153010401_3.jar C:\Users\toby\AppData\Local\Temp\surefire797646745362383724 2025-07-14T15-30-10_270-jvmRun1 surefire-20250714153010401_1tmp surefire_0-20250714153010401_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\toby\OneDrive\Desktop\Jobs\CA-Technical-Interview\DebuggingHomework\DebuggingHomework\target\test-classes;C:\Users\toby\OneDrive\Desktop\Jobs\CA-Technical-Interview\DebuggingHomework\DebuggingHomework\target\classes;C:\Users\toby\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\toby\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\toby"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.14+7"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\toby\OneDrive\Desktop\Jobs\CA-Technical-Interview\DebuggingHomework\DebuggingHomework"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\toby\AppData\Local\Temp\surefire797646745362383724\surefirebooter-20250714153010401_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="java.runtime.version" value="17.0.14+7"/>
+    <property name="user.name" value="toby"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK Client VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.14+7"/>
+    <property name="localRepository" value="C:\Users\toby\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\toby\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.14"/>
+    <property name="user.dir" value="C:\Users\toby\OneDrive\Desktop\Jobs\CA-Technical-Interview\DebuggingHomework\DebuggingHomework"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.14+7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\msys64\mingw64\bin;C:\Program Files\Git\cmd;C:\Users\toby\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\QuadooScript;C:\Gradle\gradle-8.13\bin;C:\Program Files\Java\jdk-17.0.14+7\bin;C:\Users\toby\apache-maven-3.9.10-bin\apache-maven-3.9.10\bin;C:\Users\toby\AppData\Local\Microsoft\WindowsApps;C:\Users\toby\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\toby\AppData\Local\GitHubDesktop\bin;C:\Users\toby\AppData\Local\Microsoft\WindowsApps;C:\Users\toby\.dotnet\tools;C:\Users\toby\AppData\Roaming\npm;C:\ninja-win;C:\Users\toby\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\ghcup\bin;C:\Users\toby\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages;C:\Users\toby\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\Scripts;C:\Users\toby\maven-mvnd-1.0.2-windows-amd64\maven-mvnd-1.0.2-windows-amd64;;c:\Users\toby\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.vm.info" value="mixed mode, emulated-client"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.14+7"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="mathProcessor_multithreadedOps" classname="math.ConcurrentTest" time="0.15">
+    <system-out><![CDATA[Applying operation 1 of 2 to number 9.000000
+Applying operation 2 of 2 to number 90.000000
+Applying operation 1 of 2 to number 6.000000
+Applying operation 2 of 2 to number 60.000000
+Applying operation 1 of 2 to number 5.000000
+Applying operation 2 of 2 to number 50.000000
+Applying operation 1 of 2 to number 2.000000
+Applying operation 1 of 2 to number 7.000000
+Applying operation 2 of 2 to number 70.000000
+Applying operation 2 of 2 to number 20.000000
+Applying operation 1 of 2 to number 10.000000
+Applying operation 2 of 2 to number 100.000000
+Applying operation 1 of 2 to number 4.000000
+Applying operation 2 of 2 to number 40.000000
+Applying operation 1 of 2 to number 8.000000
+Applying operation 2 of 2 to number 80.000000
+Applying operation 1 of 2 to number 0.000000
+Applying operation 1 of 2 to number 16.000000
+Applying operation 2 of 2 to number 160.000000
+Applying operation 2 of 2 to number 0.000000
+Applying operation 1 of 2 to number 17.000000
+Applying operation 2 of 2 to number 170.000000
+Applying operation 1 of 2 to number 15.000000
+Applying operation 2 of 2 to number 150.000000
+Applying operation 1 of 2 to number 12.000000
+Applying operation 2 of 2 to number 120.000000
+Applying operation 1 of 2 to number 22.000000
+Applying operation 2 of 2 to number 220.000000
+Applying operation 1 of 2 to number 19.000000
+Applying operation 2 of 2 to number 190.000000
+Applying operation 1 of 2 to number 3.000000
+Applying operation 2 of 2 to number 30.000000
+Applying operation 1 of 2 to number 13.000000
+Applying operation 2 of 2 to number 130.000000
+Applying operation 1 of 2 to number 14.000000
+Applying operation 2 of 2 to number 140.000000
+Applying operation 1 of 2 to number 1.000000
+Applying operation 2 of 2 to number 10.000000
+Applying operation 1 of 2 to number 11.000000
+Applying operation 2 of 2 to number 110.000000
+Applying operation 1 of 2 to number 20.000000
+Applying operation 2 of 2 to number 200.000000
+Applying operation 1 of 2 to number 24.000000
+Applying operation 2 of 2 to number 240.000000
+Applying operation 1 of 2 to number 23.000000
+Applying operation 2 of 2 to number 230.000000
+Applying operation 1 of 2 to number 26.000000
+Applying operation 2 of 2 to number 260.000000
+Applying operation 1 of 2 to number 18.000000
+Applying operation 2 of 2 to number 180.000000
+Applying operation 1 of 2 to number 21.000000
+Applying operation 2 of 2 to number 210.000000
+Applying operation 1 of 2 to number 28.000000
+Applying operation 2 of 2 to number 280.000000
+Applying operation 1 of 2 to number 33.000000
+Applying operation 1 of 2 to number 34.000000
+Applying operation 2 of 2 to number 330.000000
+Applying operation 2 of 2 to number 340.000000
+Applying operation 1 of 2 to number 25.000000
+Applying operation 2 of 2 to number 250.000000
+Applying operation 1 of 2 to number 30.000000
+Applying operation 2 of 2 to number 300.000000
+Applying operation 1 of 2 to number 27.000000
+Applying operation 2 of 2 to number 270.000000
+Applying operation 1 of 2 to number 32.000000
+Applying operation 2 of 2 to number 320.000000
+Applying operation 1 of 2 to number 29.000000
+Applying operation 2 of 2 to number 290.000000
+Applying operation 1 of 2 to number 31.000000
+Applying operation 2 of 2 to number 310.000000
+Applying operation 1 of 2 to number 35.000000
+Applying operation 1 of 2 to number 36.000000
+Applying operation 2 of 2 to number 350.000000
+Applying operation 2 of 2 to number 360.000000
+Applying operation 1 of 2 to number 39.000000
+Applying operation 2 of 2 to number 390.000000
+Applying operation 1 of 2 to number 40.000000
+Applying operation 2 of 2 to number 400.000000
+Applying operation 1 of 2 to number 38.000000
+Applying operation 1 of 2 to number 44.000000
+Applying operation 2 of 2 to number 380.000000
+Applying operation 2 of 2 to number 440.000000
+Applying operation 1 of 2 to number 37.000000
+Applying operation 2 of 2 to number 370.000000
+Applying operation 1 of 2 to number 41.000000
+Applying operation 2 of 2 to number 410.000000
+Applying operation 1 of 2 to number 42.000000
+Applying operation 2 of 2 to number 420.000000
+Applying operation 1 of 2 to number 46.000000
+Applying operation 2 of 2 to number 460.000000
+Applying operation 1 of 2 to number 45.000000
+Applying operation 2 of 2 to number 450.000000
+Applying operation 1 of 2 to number 52.000000
+Applying operation 1 of 2 to number 43.000000
+Applying operation 2 of 2 to number 520.000000
+Applying operation 2 of 2 to number 430.000000
+Applying operation 1 of 2 to number 51.000000
+Applying operation 1 of 2 to number 48.000000
+Applying operation 2 of 2 to number 510.000000
+Applying operation 2 of 2 to number 480.000000
+Applying operation 1 of 2 to number 50.000000
+Applying operation 2 of 2 to number 500.000000
+Applying operation 1 of 2 to number 56.000000
+Applying operation 2 of 2 to number 560.000000
+Applying operation 1 of 2 to number 47.000000
+Applying operation 2 of 2 to number 470.000000
+Applying operation 1 of 2 to number 55.000000
+Applying operation 2 of 2 to number 550.000000
+Applying operation 1 of 2 to number 49.000000
+Applying operation 2 of 2 to number 490.000000
+Applying operation 1 of 2 to number 53.000000
+Applying operation 1 of 2 to number 57.000000
+Applying operation 2 of 2 to number 530.000000
+Applying operation 2 of 2 to number 570.000000
+Applying operation 1 of 2 to number 61.000000
+Applying operation 2 of 2 to number 610.000000
+Applying operation 1 of 2 to number 54.000000
+Applying operation 1 of 2 to number 60.000000
+Applying operation 2 of 2 to number 540.000000
+Applying operation 2 of 2 to number 600.000000
+Applying operation 1 of 2 to number 69.000000
+Applying operation 2 of 2 to number 690.000000
+Applying operation 1 of 2 to number 65.000000
+Applying operation 2 of 2 to number 650.000000
+Applying operation 1 of 2 to number 71.000000
+Applying operation 2 of 2 to number 710.000000
+Applying operation 1 of 2 to number 62.000000
+Applying operation 2 of 2 to number 620.000000
+Applying operation 1 of 2 to number 64.000000
+Applying operation 1 of 2 to number 59.000000
+Applying operation 2 of 2 to number 640.000000
+Applying operation 2 of 2 to number 590.000000
+Applying operation 1 of 2 to number 63.000000
+Applying operation 2 of 2 to number 630.000000
+Applying operation 1 of 2 to number 58.000000
+Applying operation 2 of 2 to number 580.000000
+Applying operation 1 of 2 to number 68.000000
+Applying operation 2 of 2 to number 680.000000
+Applying operation 1 of 2 to number 76.000000
+Applying operation 2 of 2 to number 760.000000
+Applying operation 1 of 2 to number 72.000000
+Applying operation 2 of 2 to number 720.000000
+Applying operation 1 of 2 to number 80.000000
+Applying operation 2 of 2 to number 800.000000
+Applying operation 1 of 2 to number 78.000000
+Applying operation 2 of 2 to number 780.000000
+Applying operation 1 of 2 to number 79.000000
+Applying operation 2 of 2 to number 790.000000
+Applying operation 1 of 2 to number 70.000000
+Applying operation 2 of 2 to number 700.000000
+Applying operation 1 of 2 to number 74.000000
+Applying operation 1 of 2 to number 67.000000
+Applying operation 2 of 2 to number 740.000000
+Applying operation 2 of 2 to number 670.000000
+Applying operation 1 of 2 to number 66.000000
+Applying operation 2 of 2 to number 660.000000
+Applying operation 1 of 2 to number 87.000000
+Applying operation 2 of 2 to number 870.000000
+Applying operation 1 of 2 to number 86.000000
+Applying operation 2 of 2 to number 860.000000
+Applying operation 1 of 2 to number 73.000000
+Applying operation 1 of 2 to number 75.000000
+Applying operation 2 of 2 to number 730.000000
+Applying operation 2 of 2 to number 750.000000
+Applying operation 1 of 2 to number 77.000000
+Applying operation 2 of 2 to number 770.000000
+Applying operation 1 of 2 to number 90.000000
+Applying operation 2 of 2 to number 900.000000
+Applying operation 1 of 2 to number 85.000000
+Applying operation 2 of 2 to number 850.000000
+Applying operation 1 of 2 to number 93.000000
+Applying operation 1 of 2 to number 82.000000
+Applying operation 2 of 2 to number 930.000000
+Applying operation 2 of 2 to number 820.000000
+Applying operation 1 of 2 to number 88.000000
+Applying operation 1 of 2 to number 81.000000
+Applying operation 2 of 2 to number 880.000000
+Applying operation 2 of 2 to number 810.000000
+Applying operation 1 of 2 to number 89.000000
+Applying operation 2 of 2 to number 890.000000
+Applying operation 1 of 2 to number 83.000000
+Applying operation 2 of 2 to number 830.000000
+Applying operation 1 of 2 to number 94.000000
+Applying operation 2 of 2 to number 940.000000
+Applying operation 1 of 2 to number 84.000000
+Applying operation 2 of 2 to number 840.000000
+Applying operation 1 of 2 to number 91.000000
+Applying operation 2 of 2 to number 910.000000
+Applying operation 1 of 2 to number 99.000000
+Applying operation 2 of 2 to number 990.000000
+Applying operation 1 of 2 to number 96.000000
+Applying operation 2 of 2 to number 960.000000
+Applying operation 1 of 2 to number 98.000000
+Applying operation 1 of 2 to number 92.000000
+Applying operation 2 of 2 to number 980.000000
+Applying operation 2 of 2 to number 920.000000
+Applying operation 1 of 2 to number 95.000000
+Applying operation 2 of 2 to number 950.000000
+Applying operation 1 of 2 to number 97.000000
+Applying operation 2 of 2 to number 970.000000
+Comparing -5.000000 with -5.000000
+Comparing 5.000000 with 5.000000
+Comparing 15.000000 with 15.000000
+Comparing 25.000000 with 25.000000
+Comparing 35.000000 with 35.000000
+Comparing 45.000000 with 45.000000
+Comparing 55.000000 with 55.000000
+Comparing 65.000000 with 65.000000
+Comparing 75.000000 with 75.000000
+Comparing 85.000000 with 85.000000
+Comparing 95.000000 with 95.000000
+Comparing 105.000000 with 105.000000
+Comparing 115.000000 with 115.000000
+Comparing 125.000000 with 125.000000
+Comparing 135.000000 with 135.000000
+Comparing 145.000000 with 145.000000
+Comparing 155.000000 with 155.000000
+Comparing 165.000000 with 165.000000
+Comparing 175.000000 with 175.000000
+Comparing 185.000000 with 185.000000
+Comparing 195.000000 with 195.000000
+Comparing 205.000000 with 205.000000
+Comparing 215.000000 with 215.000000
+Comparing 225.000000 with 225.000000
+Comparing 235.000000 with 235.000000
+Comparing 245.000000 with 245.000000
+Comparing 255.000000 with 255.000000
+Comparing 265.000000 with 265.000000
+Comparing 275.000000 with 275.000000
+Comparing 285.000000 with 285.000000
+Comparing 295.000000 with 295.000000
+Comparing 305.000000 with 305.000000
+Comparing 315.000000 with 315.000000
+Comparing 325.000000 with 325.000000
+Comparing 335.000000 with 335.000000
+Comparing 345.000000 with 345.000000
+Comparing 355.000000 with 355.000000
+Comparing 365.000000 with 365.000000
+Comparing 375.000000 with 375.000000
+Comparing 385.000000 with 385.000000
+Comparing 395.000000 with 395.000000
+Comparing 405.000000 with 405.000000
+Comparing 415.000000 with 415.000000
+Comparing 425.000000 with 425.000000
+Comparing 435.000000 with 435.000000
+Comparing 445.000000 with 445.000000
+Comparing 455.000000 with 455.000000
+Comparing 465.000000 with 465.000000
+Comparing 475.000000 with 475.000000
+Comparing 485.000000 with 485.000000
+Comparing 495.000000 with 495.000000
+Comparing 505.000000 with 505.000000
+Comparing 515.000000 with 515.000000
+Comparing 525.000000 with 525.000000
+Comparing 535.000000 with 535.000000
+Comparing 545.000000 with 545.000000
+Comparing 555.000000 with 555.000000
+Comparing 565.000000 with 565.000000
+Comparing 575.000000 with 575.000000
+Comparing 585.000000 with 585.000000
+Comparing 595.000000 with 595.000000
+Comparing 605.000000 with 605.000000
+Comparing 615.000000 with 615.000000
+Comparing 625.000000 with 625.000000
+Comparing 635.000000 with 635.000000
+Comparing 645.000000 with 645.000000
+Comparing 655.000000 with 655.000000
+Comparing 665.000000 with 665.000000
+Comparing 675.000000 with 675.000000
+Comparing 685.000000 with 685.000000
+Comparing 695.000000 with 695.000000
+Comparing 705.000000 with 705.000000
+Comparing 715.000000 with 715.000000
+Comparing 725.000000 with 725.000000
+Comparing 735.000000 with 735.000000
+Comparing 745.000000 with 745.000000
+Comparing 755.000000 with 755.000000
+Comparing 765.000000 with 765.000000
+Comparing 775.000000 with 775.000000
+Comparing 785.000000 with 785.000000
+Comparing 795.000000 with 795.000000
+Comparing 805.000000 with 805.000000
+Comparing 815.000000 with 815.000000
+Comparing 825.000000 with 825.000000
+Comparing 835.000000 with 835.000000
+Comparing 845.000000 with 845.000000
+Comparing 855.000000 with 855.000000
+Comparing 865.000000 with 865.000000
+Comparing 875.000000 with 875.000000
+Comparing 885.000000 with 885.000000
+Comparing 895.000000 with 895.000000
+Comparing 905.000000 with 905.000000
+Comparing 915.000000 with 915.000000
+Comparing 925.000000 with 925.000000
+Comparing 935.000000 with 935.000000
+Comparing 945.000000 with 945.000000
+Comparing 955.000000 with 955.000000
+Comparing 965.000000 with 965.000000
+Comparing 975.000000 with 975.000000
+Comparing 985.000000 with 985.000000
+]]></system-out>
+  </testcase>
+</testsuite>
