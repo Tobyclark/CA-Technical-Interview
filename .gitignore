@@ -1,0 +1,7 @@
+.git/
+.gitattributes
+.class
+.jar
+.lst
+.txt
+.xml
