@@ -5,6 +5,7 @@ import java.util.Collection;
 import java.util.Comparator;
 import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Stream;
 
 public class Processor {
     /**
@@ -15,26 +16,33 @@ public class Processor {
      * @return the most productivity or null.
      */
     public final Integer getBestProductivityForEmployee(String employeeName, Map<String, Map<String, Branch>> annualData) {
-        Integer bestProductivity = null;
-        if (annualData != null) {
-            for (String year : annualData.keySet()) {
-                Map<String, Branch> branches = annualData.get(year);
-                if (branches != null) {
-                    for (Branch branch : branches.values()) {
-                        if (branch != null && branch.getEmployees() != null) {
-                            for (Employee employee : branch.getEmployees()) {
-                                if (employee != null && employee.getName() != null && employee.getName().equals(employeeName)) {
-                                    if (bestProductivity == null || (employee.getProductivity() != null && employee.getProductivity() > bestProductivity)) {
-                                        bestProductivity = employee.getProductivity();
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        return Optional.ofNullable(annualData)
+            .map(Map::values)
+            .stream()
+            .flatMap(Collection::stream)
+        // get a stream of branches (for each year)
+        .flatMap(branchMap -> Optional.ofNullable(branchMap)
+            .map(Map::values)
+            .stream()
+            .flatMap(Collection::stream))
 
-        return bestProductivity;
-    }
+        // convert each branch in the stream to employees
+        .flatMap(branch -> Optional.ofNullable(branch)
+            .map(Branch::getEmployees)
+            .stream()
+            .flatMap(Collection::stream))
+
+        // filter the stream to only include employees with the given name
+        .flatMap(employee -> Optional.ofNullable(employee)
+            .filter(e -> Optional.ofNullable(e.getName())
+                .map(employeeName::equals)
+                .orElse(false))
+            .map(Stream::of)
+            .orElseGet(Stream::empty))
+
+        // get max productivity from the remaining employees
+        .flatMap(emp -> Optional.ofNullable(emp.getProductivity()).stream())
+        .max(Integer::compareTo)
+        .orElse(null);
 }
+    }
