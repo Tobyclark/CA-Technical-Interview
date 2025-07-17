@@ -32,21 +32,37 @@ public class ProcessorTest {
         assertEquals(Integer.valueOf(7), result);
 
     }
+
     @Test
     public void getBestProductivityForEmployee_nullAnnualData() {
-        assertNull(processor.getBestProductivityForEmployee("Jimbob", null));
+        Integer result = processor.getBestProductivityForEmployee("abcdef", null);
+        assertNull(result);
     }
 
     @Test
-    public void getBestProductivityForEmployee_nullEmployee() {
-        Map<String, Map<String, Branch>> data = new HashMap<>();
-        assertNull(processor.getBestProductivityForEmployee(null, data));
+    public void getBestProductivityForEmployee_nullEmployeeName() {
+        Map<String, Map<String, Branch>> employeeData = parser.parseBranchesByYear("sample.json");
+
+        Integer result = processor.getBestProductivityForEmployee(null, employeeData);
+        assertNull(result);
     }
 
     @Test
-    public void getBestProductivityForEmployee_nullBranches() {
-        Map<String, Map<String, Branch>> data = new HashMap<>();
-        data.put("2020", null);
-        assertNull(processor.getBestProductivityForEmployee("Jimbob", data));
+    public void getBestProductivityForEmployee_missingEmployeeInData() {
+        Map<String, Map<String, Branch>> employeeData = parser.parseBranchesByYear("sample.json");
+
+        Integer result = processor.getBestProductivityForEmployee("Nonexistent Name", employeeData);
+        assertNull(result);
+    }
+
+    @Test
+    public void getBestProductivityForEmployee_nullProductivityFields() {
+        Map<String, Map<String, Branch>> employeeData = parser.parseBranchesByYear("sample.json");
+
+        Integer result = processor.getBestProductivityForEmployee("Pamila Richardson", employeeData);
+        assertEquals(Integer.valueOf(93), result);
+
+        result = processor.getBestProductivityForEmployee("Jane Doe", employeeData);
+        assertEquals(Integer.valueOf(86), result);
     }
 }
