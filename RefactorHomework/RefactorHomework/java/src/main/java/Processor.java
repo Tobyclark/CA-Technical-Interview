@@ -57,8 +57,7 @@ public class Processor {
             .flatMap(this::getBranches)
             .flatMap(this::getEmployees)
             .filter(employee -> isMatchingEmployee(employee, employeeName))
-            .map(Employee::getProductivity)
-            .filter(productivity -> productivity != null)
+            .flatMap(employee -> Optional.ofNullable(employee.getProductivity()).stream())
             .max(Comparator.naturalOrder())
             .orElse(null);
     }
